@@ -4,3 +4,17 @@
   text-align: center;
   height: 100%;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 767px) {
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+}

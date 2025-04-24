@@ -31,9 +31,9 @@ const ImageSlider = ({ images }) => {
                 {images.map((img, idx) => (
                     <div
                         key={idx}
-                        className="relative min-w-[200px] flex-shrink-0 scroll-snap-align-start bg-gray-100 shadow-md overflow-hidden"
+                        className="relative min-w-[200px] flex-shrink-0 scroll-snap-align-start overflow-hidden"
                     >
-                        <img src={img} alt={`img-${idx}`} className="w-full h-40 object-cover" />
+                        <img src={img} alt={`img-${idx}`} className="w-full h-40 object-contain" />
                     </div>
                 ))}
             </div>

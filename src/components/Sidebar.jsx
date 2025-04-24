@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { HiOutlineMenu } from 'react-icons/hi';
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +29,8 @@ function Sidebar() {
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-2 py-1 hover:border hover:border-white rounded z-50"
         >
-            <span className="mr-1">All</span>
-            <svg 
-            className={`w-4 h-4 transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-            >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
+            <HiOutlineMenu className="w-3 h-3" />
+            <span className="mx-1">All</span>
         </button>
 
         <div 
